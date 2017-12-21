@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="ICT13580066FinalA.ProductNewPage">
+    <Grid>
+        <Image
+            Aspect="Fill" />
+        <ScrollView>
+            <Frame
+                Margin="30"
+                CornerRadius="20"
+                BackgroundColor="Silver"
+                VerticalOptions="Start">
+                <StackLayout
+                    Orientation="Vertical"
+                    Margin="20">
+
+                    <Label
+                        x:Name="titleLable"
+                        Text="ICT13580066FinalA"
+                        HorizontalTextAlignment="Center"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        Margin="10" />
+
+                    <Label
+                        Text="ชื่อ"
+                        TextColor="Green"
+                        FontSize="14">
+                    </Label>
+                    <Entry
+                        x:Name="nameEntry"
+                        Placeholder="ชื่อ"
+                        BackgroundColor="White" />
+
+                    <Label
+                        Text="นามสกุล"
+                        TextColor="Green"
+                        FontSize="14">
+                    </Label>
+                    <Entry
+                        x:Name="lastNameEntry"
+                        Placeholder="นามสกุล"
+                        BackgroundColor="White" />
+
+                    <Label
+                        Text="อายุ"
+                        TextColor="Green"
+                        FontSize="14">
+                    </Label>
+                    <Entry
+                        x:Name="ageEntry"
+                        Placeholder="อายุ"
+                        BackgroundColor="White"
+                        Keyboard="Numeric" />
+
+                    <Label
+                        Text="เพศ"
+                        TextColor="Green"
+                        FontSize="14">
+                    </Label>
+                    <Picker
+                        x:Name="genderPicker"
+                        Title="เลือกเพศ"
+                        BackgroundColor="White" />
+
+                    <Label
+                        Text="แผนก"
+                        TextColor="Green"
+                        FontSize="14">
+                    </Label>
+                    <Picker
+                        x:Name="dpmPicker"
+                        Title="เลือกแผนก"
+                        BackgroundColor="White" />
+
+                    <Label
+                        Text="เบอร์โทรศัพท์"
+                        TextColor="Green"
+                        FontSize="14">
+                    </Label>
+                    <Entry
+                        x:Name="phoneEntry"
+                        Placeholder="เบอร์โทรศัพท์"
+                        BackgroundColor="White"
+                        Keyboard="Numeric" />
+
+                    <Label
+                        Text="อีเมล"
+                        TextColor="Green"
+                        FontSize="14">
+                    </Label>
+                    <Entry
+                        x:Name="mailEntry"
+                        Placeholder="อีเมล"
+                        BackgroundColor="White" />
+
+                    <Label
+                        Text="ที่อยู่"
+                        TextColor="Green"
+                        FontSize="14">
+                    </Label>
+                    <Editor
+                        x:Name="addressEditor"
+                        HeightRequest="100" />
+
+                    <Label
+                        Text="สถานะแต่งงาน"
+                        TextColor="Green"
+                        FontSize="14">
+                    </Label>
+                    <Picker
+                        x:Name="marryPicker"
+                        Title="เลือกสถานะแต่งงาน"
+                        BackgroundColor="White" />
+
+                    <Label
+                        Text="จำนวนบุตร"
+                        TextColor="Green"
+                        FontSize="14">
+                    </Label>
+                    <Entry
+                        x:Name="babyEntry"
+                        Placeholder="จำนวนบุตร"
+                        BackgroundColor="White" />
+
+                    <Label
+                        Text="เงินเดือน"
+                        TextColor="Green"
+                        FontSize="14">
+                    </Label>
+                    <Picker
+                        x:Name="salaryPicker"
+                        Title="ระบุเงินเดือน"
+                        BackgroundColor="White" />
+
+                    <Button
+                        x:Name="saveButton"
+                        Text="บันทึก"
+                        BackgroundColor="Navy">
+                    </Button>
+                    <Button
+                        x:Name="cancelButton"
+                        Text="ยกเลิก"
+                        BackgroundColor="Maroon" />
+                    
+                </StackLayout>
+            </Frame>
+        </ScrollView>
+    </Grid>
+</ContentPage>
